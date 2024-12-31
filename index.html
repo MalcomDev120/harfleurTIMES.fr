@@ -1,59 +1,165 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <link href="style.css" rel="stylesheet" />
-    <title>Portfolio Personnel</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harfleur Times</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <section>
-        <h1>Moses Malcom</h1>
-        <h2>Developpeur de Web</h2>
-        <a href="mosesmalcom6@gmail.com" class="contact-btn">Contact</a>
-    </section>
-    <img src="beautiful.jpeg" height="500" alt="harfleur beautiful">
-    <section id="about">
-        <h2>À propos</h2>
+  <header class="header">
+    <h2 class="logo">HarfleurTIMES</h2>
+    <nav class="navbar">
+      <button onclick="location.href='actualites.html'">Actualités Mondiales</button>
+      <button onclick="location.href='divertissement.html'">Divertissement</button>
+      <button onclick="location.href='emplois.html'">Emplois et Compétences</button>
+      <button onclick="location.href='affaires.html'">Affaires</button>
+      <button onclick="location.href='technologie.html'">Technologie</button>
+      <button onclick="location.href='Malcom GCs.html'">Malcom GCs </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Harfleur Times, Vous connectent au Monde.</h2>
         <p>
-            Je suis développeur web et joueur de football.
+          Harfleur Times vous rapproche du monde en vous connectant à des sources fiables. Nous vous fournissons des
+          informations, des nouvelles et des services qui rendent la vie plus simple.
         </p>
+      </div>
     </section>
-    <section id="skills">
-        <h2>Compétences</h2>
-        <ul>
-            <li class="skill-item">HTML</li>
-            <li class="skill-item">CSS</li>
-            <li class="skill-item">Javascript</li>
-        </ul>
+
+    <section class="registration-form">
+      <h2>Inscription</h2>
+      <form action="/register" method="post">
+        <label for="nom">Nom</label>
+        <input type="text" name="name" id="nom" required />
+
+        <label for="prenom">Prénom</label>
+        <input type="text" name="prenom" id="prenom" required />
+
+        <label for="age">Âge</label>
+        <input type="number" name="age" id="age" required />
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+
+        <label for="abonnement">Abonnement</label>
+        <select name="abonnement" id="abonnement">
+          <option value="non">Non</option>
+          <option value="actualités">Abonnement aux actualités</option>
+          <option value="formation">Abonnement aux formations</option>
+          <option value="publicité">Abonnement pour la publicité</option>
+          <option value="enterprise">Abonnement d'entreprise</option>
+        </select>
+
+        <button type="submit">S'inscrire</button>
+      </form>
     </section>
-    <section id="projects">
-        <h2>Projets</h2>
-        <ol>
-            <li class="project-list">
-                <h3>Boutique en ligne</h3>
-                <p>Réalisation d'une boutique en ligne afin de vendre des bijoux</p>
-                <a href="boutique.html" class="project-link">Site de la boutique de bijoux</a>
-            </li>
-            <li class="project-list">
-                <h3> Site de la Mairie du havre</h3>
-                <p> Réalisation d'un site pour la ville du Havre qui a pour but d'annoncer les actualitées de la ville
-                </p>
-                <a href="page-lehavre.html" class="project-link">Site de la ville du Havre</a>
-            </li>
-            <li class="project-list">
-                <h3>Site vitrine du musée de l'aviation</h3>
-                <p>Réalisation du site du musée de l'aviation qui permet de voir les actualitées du musée, les
-                    collections présentées ainsi que l'histoire du musée</p>
-                <a href="musee-aviation.html" class="project-link">Site du musée de l'aviation</a>
-            </li>
-        </ol>
+
+    <section class="trending">
+      <div class="hero-text">
+        <h1>Pour profiter pleinement de nos services, vous devez vous abonner à nous.</h1>
+      </div>
+      <div class="paragraphs">
+        <h2>Ce que vous devez savoir sur nous.</h2>
+        <p>Nous sommes les personnes les plus efficaces avec lesquelles travailler et nous rencontrons chaque jour
+          tellement
+          de choses qui affectent positivement la vie des gens que nous essayons de partager toutes les caractéristiques
+          similaires que la plupart des gens négligent.</p>
+        <p>Nous faisons une vente, vendons un produit ou convainquons nos clients d'essayer quelque chose de nouveau,
+          nous
+          le faisons de manière professionnelle.</p>
+        <p>Nous avons tellement de méthodes professionnelles avec lesquelles nous parvenons à présenter nos arguments de
+          la
+          manière la plus convaincante possible. Notre expérience nous montre que le simple fait d'énoncer les faits ne
+          suffit pas toujours, c'est la façon dont vous les présentez qui compte.</p>
+        <p>Nous veillons à ce que le service que nous fournissons à nos clients et à notre communauté soit gravé dans
+          nos
+          vies, chaque jour, chaque semaine, au fil des ans.</p>
+      </div>
     </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Formulaire a voir par la suite</p>
+
+    <section class="images">
+      <h2>Notre groupe d'experts</h2>
+      <img src="5.jpeg" alt="images" width="1010" height="600">
     </section>
+
+    <section class="trending">
+      <h2>Tendances</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="https://www.bankrate.com/2022/07/07151503/Cryptocurrency-statistics.jpeg" alt="Crypto" />
+          <h3>L'Ascension Imparable des Cryptomonnaies!</h3>
+          <p>Découvrez les dernières tendances et analyses sur le marché.</p>
+          <button onclick="location.href='crypto.html'">En savoir plus</button>
+        </article>
+
+        <article class="card">
+          <img
+          src="bric à brac 2.png" alt="bric à brac 2.png" />
+          <h3>LA SOLIDARITÉ AVEC COMITÉ DE HARFLEUR</h3>
+          <p>"Tout ce qui est humain est nôtre".</p>
+          <button onclick="location.href='Bric à Brac.html'">En savoir plus</button>
+        </article>
+
+        <article class="card">
+          <img
+            src="https://d3hne3c382ip58.cloudfront.net/files/uploads/bookmundi/resized/cmsfeatured/things-to-do-in-france-paris-1577359237-785X440.jpg"
+            alt="Voyage" />
+          <h3>Destinations Incontournables</h3>
+          <p>Explorez des destinations de rêve.</p>
+          <button onclick="location.href='voyage.html'">En savoir plus</button>
+        </article>
+      </div>
+    </section>
+
+    <div class="video-wrapper">
+      <section class="video-section">
+        <h2>Vidéo de travail en équipe</h2>
+        <div class="video-container">
+          <video controls>
+            <source src="Team.mp4" type="video/mp4" />
+            Votre navigateur ne supporte pas la balise vidéo.
+          </video>
+        </div>
+      </section>
+
+      <section class="video-section">
+        <h2>Vidéo de motivation</h2>
+        <div class="video-container">
+          <video controls>
+          <source src="(MOTIVATION).mp4" type="video/mp4" />
+            Votre navigateur ne supporte pas la balise vidéo.
+          </video>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="about">
+      <h3>Qui sommes-nous</h3>
+      <p>Explorez les dernières actualités et restez informé(e)...</p>
+    </div>
+    <div class="links">
+      <a href="index.html">Accueil</a>
+      <a href="categories.html">Catégories</a>
+      <a href="tendances.html">Tendances</a>
+      <a href="archives.html">Archives</a>
+      <a href="contact.html">Nous Contacter</a>
+    </div>
+    <div class="social">
+      <h3>Suivez-nous</h3>
+      <a href="#"><img src="https://harfleur-times.netlify.app/assets/assets/facebook_icon.png" alt="Facebook" /></a>
+      <a href="#"><img src="https://harfleur-times.netlify.app/assets/assets/twitter_icon.png" alt="Twitter" /></a>
+      <a href="#"><img src="https://harfleur-times.netlify.app/assets/assets/instagram_icon.png" alt="Instagram" /></a>
+      <a href="#"><img src="https://harfleur-times.netlify.app/assets/assets/linkedin_icon.png" alt="LinkedIn" /></a>
+    </div>
+    <p>&copy; 2024 Harfleur Times. Tous droits réservés.</p>
+  </footer>
 </body>
 
 </html>
